@@ -26,18 +26,10 @@ class LLMClient:
             {"role": "user", "content": user_prompt}
         ]
 
-        if self.provider == "openai":
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=messages,
-                temperature=temperature
-            )
-            return response.choices[0].message.content.strip()
-        
-        elif self.provider == "groq":
-            response = self.client.chat.completions.create(
-                model=self.model,
-                messages=messages,
-                temperature=temperature
-            )
-            return response.output_text.strip()
+        response = self.client.chat.completions.create(
+            model=self.model,
+            messages=messages,
+            temperature=temperature
+        )
+
+        return response.choices[0].message.content.strip()
