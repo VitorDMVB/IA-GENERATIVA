@@ -1,0 +1,18 @@
+[
+  {
+    "role": "system",
+    "content": "Você é um assistente educacional claro e direto."
+  },
+  {
+    "role": "user",
+    "content": "oi"
+  },
+  {
+    "role": "assistant",
+    "content": "Hoje é 2026-03-12"
+  },
+  {
+    "role": "user",
+    "content": "Nome"
+  }
+]

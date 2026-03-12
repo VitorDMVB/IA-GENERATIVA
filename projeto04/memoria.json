@@ -1,0 +1,10 @@
+[
+  {
+    "role": "system",
+    "content": "Voc\u00ea \u00e9 um assistente educacional claro e objetivo."
+  },
+  {
+    "role": "user",
+    "content": "Ol\u00e1"
+  }
+]
